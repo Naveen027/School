@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>School Website</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="/index.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://cdnb.artstation.com/p/assets/images/images/034/563/813/large/shudhangshu-malakar-education-school-logo.jpg?1612626887"
+                    alt="School Logo">
+            </div>
+            <div class="school-name">Green Valley Public School</div>
+
+            <!-- Hamburger and Close Icons -->
+            <div class="menu-icons">
+                <div class="hamburger" id="hamburger">☰</div>
+                <div class="close-icon" id="closeIcon">×</div>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <!-- Mobile dropdown items -->
+                <li class="mobile-only"><a href="#events">Events</a></li>
+                <li class="mobile-only"><a href="#awards">Awards</a></li>
+                <li class="mobile-only"><a href="#celebrations">Celebrations</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+
+                <!-- Desktop dropdown -->
+                <li class="dropdown">
+                    <a href="#">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#notices">Notices</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <section class="slider">
+        <div class="slide active"
+            style="background-image: url('https://media.gettyimages.com/id/1151224308/photo/teachers-with-children-learning-at-preschool.jpg?s=612x612&w=gi&k=20&c=7z5dnX_NsIQFjRGzFF-ECd8tAy6mDjYPuo8SwpGuy0I=');">
+            <div class="slide-text">
+                <h1>Inspiring Young Minds</h1>
+                <p>Empowering students to think, learn and lead</p>
+            </div>
+        </div>
+
+        <div class="slide"
+            style="background-image: url('https://www.chickyolive.com/wp-content/uploads/2020/12/Helping-your-Child-Adjust-to-School-Life.jpg');">
+            <div class="slide-text">
+                <h1>Knowledge for the Future</h1>
+                <p>Building strong foundations through education</p>
+            </div>
+        </div>
+
+        <div class="slide"
+            style="background-image: url('https://images.unsplash.com/photo-1524069290683-0457abfe42c3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2Nob29sJTIwc3R1ZGVudHxlbnwwfHwwfHx8MA%3D%3D');">
+            <div class="slide-text">
+                <h1>Discipline & Excellence</h1>
+                <p>Instilling values that shape the leaders of tomorrow</p>
+            </div>
+        </div>
+
+        <div class="slide"
+            style="background-image: url('https://blog.cambridgeinternational.org/wp-content/uploads/South-Asian-Students.png');">
+            <div class="slide-text">
+                <h1>Creative Learning</h1>
+                <p>Encouraging innovation and critical thinking</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About ABC Public School</h2>
+                <p>
+                    At <strong>ABC Public School</strong>, we believe education goes beyond the classroom. Founded in
+                    1995, we are committed to nurturing young minds through a holistic approach that blends academic
+                    excellence, moral values, and co-curricular enrichment.
+                </p>
+                <p>
+                    Our dedicated faculty and staff work hand-in-hand to provide a safe, inclusive, and inspiring
+                    environment for students. From smart classrooms and well-equipped labs to vibrant cultural programs
+                    and sports activities, we prepare our students not just for exams, but for life.
+                </p>
+                <p>
+                    We strive to instill confidence, curiosity, and compassion in every learner, empowering them to
+                    become responsible citizens and lifelong learners. With a legacy of over 25 years, we continue to
+                    inspire and shape the leaders of tomorrow.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="https://kcismertaroad.com/wp-content/uploads/2020/01/9arts-about.jpg" alt="School Campus" />
+            </div>
+        </div>
+    </section>
+
+
+    <section id="courses" class="courses-section">
+        <h2 class="section-title">Our Academic Programs</h2>
+        <p class="section-subtitle">From nurturing toddlers to preparing teens, we support every stage of learning.</p>
+
+        <div class="course-grid">
+
+            <div class="course-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="LKG & UKG">
+                <h3>Pre-Primary (LKG & UKG)</h3>
+                <p>Foundational learning through play-based activities, storytelling, and motor skill development.</p>
+                <button>Know More</button>
+            </div>
+
+            <div class="course-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2907/2907837.png" alt="Primary">
+                <h3>Primary (1st to 5th)</h3>
+                <p>Core subjects with emphasis on reading, writing, numeracy and moral values.</p>
+                <button>Know More</button>
+            </div>
+
+            <div class="course-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="Middle School">
+                <h3>Middle School (6th to 8th)</h3>
+                <p>Deeper academic exposure with science labs, basic computer training, and projects.</p>
+                <button>Know More</button>
+            </div>
+
+            <div class="course-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3159/3159336.png" alt="High School">
+                <h3>High School (9th & 10th)</h3>
+                <p>Board exam-focused learning with advanced curriculum, mentoring and career guidance.</p>
+                <button>Know More</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal container -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-btn">&times;</span>
+            <h2 id="modalTitle">Course Title</h2>
+            <p id="modalDesc">Full description will go here...</p>
+        </div>
+    </div>
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title">School Gallery</h2>
+        <p class="section-subtitle">Explore our moments of joy, learning, and achievements</p>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+            <button class="filter-btn" data-filter="science">Science Events</button>
+            <button class="filter-btn" data-filter="farewell">Farewell</button>
+            <button class="filter-btn" data-filter="celebrations">Celebrations</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Events -->
+            <div class="gallery-item show" data-category="events">
+                <div class="gallery-image-wrapper">
+                    <img src="/images/event1.webp" alt="Annual Event">
+                    <div class="overlay">
+                        <h3>Annual Day</h3>
+                        <p class="date">March 2024</p>
+                        <p class="desc">A showcase of student talent and cultural events.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item show" data-category="events">
+                <div class="gallery-image-wrapper">
+                    <img src="/images/event2.webp" alt="Sports Day">
+                    <div class="overlay">
+                        <h3>Sports Day</h3>
+                        <p class="date">January 2024</p>
+                        <p class="desc">Fun-filled competitions promoting sportsmanship.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item show" data-category="events">
+                <div class="gallery-image-wrapper">
+                    <img src="/images/event3.jpg" alt="Cultural Fest">
+                    <div class="overlay">
+                        <h3>Cultural Fest</h3>
+                        <p class="date">August 2023</p>
+                        <p class="desc">Celebrating diverse traditions with dance & drama.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Science -->
+            <div class="gallery-item show" data-category="science">
+                <div class="gallery-image-wrapper">
+                    <img src="/images/s1.jpg" alt="Science Fair">
+                    <div class="overlay">
+                        <h3>Science Fair</h3>
+                        <p class="date">Feb 2024</p>
+                        <p class="desc">Innovative models and student-led experiments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item show" data-category="science">
+                <div class="gallery-image-wrapper">
+                    <img src="/images/s2.jpg" alt="Experiment Day">
+                    <div class="overlay">
+                        <h3>Experiment Day</h3>
+                        <p class="date">Nov 2023</p>
+                        <p class="desc">Hands-on science demos by Class 6–10 students.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item show" data-category="science">
+                <div class="gallery-image-wrapper">
+                    <img src="/images/s3.jpg" alt="Lab Demo">
+                    <div class="overlay">
+                        <h3>Lab Demonstration</h3>
+                        <p class="date">June 2023</p>
+                        <p class="desc">Physics and chemistry concepts brought to life.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Farewell -->
+            <div class="gallery-item show" data-category="farewell">
+                <div class="gallery-image-wrapper">
+                    <img src="/images/f1.jpg" alt="Farewell Group">
+                    <div class="overlay">
+                        <h3>Farewell 2024</h3>
+                        <p class="date">April 2024</p>
+                        <p class="desc">A memorable send-off to our outgoing students.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item show" data-category="farewell">
+                <div class="gallery-image-wrapper">
+                    <img src="/images/f2.jpg" alt="Farewell Memories">
+                    <div class="overlay">
+                        <h3>Memory Wall</h3>
+                        <p class="date">April 2024</p>
+                        <p class="desc">Cherished moments captured with friends & teachers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item show" data-category="farewell">
+                <div class="gallery-image-wrapper">
+                    <img src="/images/f3.jpg" alt="Seniors Day">
+                    <div class="overlay">
+                        <h3>Seniors Day</h3>
+                        <p class="date">April 2024</p>
+                        <p class="desc">Celebrating the journey of our 10th-grade batch.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Celebrations -->
+            <div class="gallery-item show" data-category="celebrations">
+                <div class="gallery-image-wrapper">
+                    <img src="/images/a1.jpg" alt="Independence Day">
+                    <div class="overlay">
+                        <h3>Independence Day</h3>
+                        <p class="date">August 15, 2023</p>
+                        <p class="desc">Flag hoisting and patriotic performances by students.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item show" data-category="celebrations">
+                <div class="gallery-image-wrapper">
+                    <img src="/images/a2.jpg" alt="Award Function">
+                    <div class="overlay">
+                        <h3>Award Ceremony</h3>
+                        <p class="date">Sept 2023</p>
+                        <p class="desc">Recognizing excellence in academics and activities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item show" data-category="celebrations">
+                <div class="gallery-image-wrapper">
+                    <img src="https://t3.ftcdn.net/jpg/08/55/99/18/240_F_855991899_FLUPxeeq1C3UwNIv7ofH0exOn9OyNN8J.jpg"
+                        alt="Festival Celebration">
+                    <div class="overlay">
+                        <h3>Festival Week</h3>
+                        <p class="date">Oct 2023</p>
+                        <p class="desc">Students enjoy traditional celebrations and sweets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="principal-section">
+        <h2 class="principal-heading">Meet Our Principal</h2>
+        <div class="principal-container">
+            <div class="principal-photo">
+                <img src="https://www.graduateprogram.org/wp-content/uploads/2019/09/Sept.-20-The-Principal-as-Leader_web-1024x682.jpg"
+                    alt="Principal Photo">
+            </div>
+            <div class="principal-info">
+                <h2>Dr. Suresh Kumar</h2>
+                <h4>Principal, Sunrise Public School</h4>
+                <p>
+                    With over 25 years of experience in academic leadership, Dr. Suresh Kumar has led the
+                    institution to academic excellence and all-round development.
+                    <br><br>
+                    He holds a Ph.D. in Educational Psychology and has served in multiple CBSE schools across India.
+                    Passionate about student growth, he promotes an inclusive and forward-thinking environment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faculty-section">
+        <h2 class="faculty-title">Our Dedicated Faculty</h2>
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Teacher">
+                <h4>Mrs. Rekha Sharma</h4>
+                <p>M.Sc., B.Ed. (Science)</p>
+            </div>
+            <div class="faculty-card">
+                <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Teacher">
+                <h4>Mr. Anil Patil</h4>
+                <p>M.A., B.Ed. (Social Science)</p>
+            </div>
+            <div class="faculty-card">
+                <img src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Teacher">
+                <h4>Ms. Nisha Rao</h4>
+                <p>B.Sc., B.Ed. (Mathematics)</p>
+            </div>
+            <div class="faculty-card">
+                <img src="https://images.pexels.com/photos/769745/pexels-photo-769745.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Teacher">
+                <h4>Mr. Ravi Menon</h4>
+                <p>M.Com., B.Ed. (Commerce)</p>
+            </div>
+            <div class="faculty-card">
+                <img src="https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Teacher">
+                <h4>Mrs. Alka Jain</h4>
+                <p>B.A., B.Ed. (English)</p>
+            </div>
+            <div class="faculty-card">
+                <img src="https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Teacher">
+                <h4>Mr. Sandeep Kulkarni</h4>
+                <p>B.P.Ed. (Physical Education)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2 class="contact-heading">Admission Enquiry Form</h2>
+        <div class="contact-container">
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="class">Seeking Admission For</label>
+                    <select id="class" name="class" required>
+                        <option value="">Select Class</option>
+                        <option value="LKG">LKG</option>
+                        <option value="UKG">UKG</option>
+                        <option value="1st">1st Standard</option>
+                        <option value="2nd">2nd Standard</option>
+                        <option value="3rd">3rd Standard</option>
+                        <option value="...">... up to 10th</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Any Message</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="school-footer">
+        <div class="footer-content">
+            <!-- Left Side: Contact Details -->
+            <div class="footer-left">
+                <h3>Green Valley Public School</h3>
+                <p><img src="https://img.icons8.com/ios-filled/20/000000/phone.png" /> +91 9876543210</p>
+                <p><img src="https://img.icons8.com/ios-filled/20/000000/email.png" /> contact@greenvalley.edu.in
+                </p>
+                <p><img src="https://img.icons8.com/ios-filled/20/000000/address.png" /> 123, School Road,
+                    Bengaluru, India</p>
+            </div>
+
+            <!-- Right Side: Embedded Map -->
+            <div class="footer-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.270695610984!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670d00f0d3d%3A0x0!2sGreen+Valley+Public+School!5e0!3m2!1sen!2sin!4v1600000000000"
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Green Valley Public School | Designed & Developed by Naveen Bellad</p>
+        </div>
+    </footer>
+
+ <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger');
+            const closeIcon = document.getElementById('closeIcon');
+            const navLinks = document.getElementById('navLinks');
+
+            // Show menu
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.add('show');
+                hamburger.style.display = 'none';
+                closeIcon.style.display = 'block';
+            });
+
+            // Hide menu
+            closeIcon.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+                closeIcon.style.display = 'none';
+                hamburger.style.display = 'block';
+            });
+
+            // Hide menu when any link is clicked
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('show');
+                    closeIcon.style.display = 'none';
+                    hamburger.style.display = 'block';
+                });
+            });
+        });
+    </script>
+
+</body>
+
+
+</html>
