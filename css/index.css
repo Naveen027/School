@@ -24,26 +24,74 @@ nav {
   z-index: 1000;
 }
 
+/* Trust Name (Top Blue Text) */
+.trust-name {
+    color: #3b4ba0; /* Deep blue */
+    font-weight: 900;
+    font-size: 10px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.trust-name sup {
+    font-size: 14px;
+}
+
+/* National Islamic School (Main Green Text) */
+.school-name {
+    color: #1a5e3a; /* Forest green */
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: -1px;
+    transform: scaleY(1.1); /* Slightly taller look */
+}
+
+.abbr {
+    color: #632d2a; /* Dark brownish-red for [NIS] */
+}
+
+/* English Medium (Red Text) */
+.medium-type {
+    color: #e33e38; /* Bright red */
+    font-size: 10px;
+    font-weight: 900;
+    margin: 5px 0;
+    letter-spacing: 2px;
+    /* Adding subtle depth like the image */
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1); 
+}
+
+/* Affiliation (Bottom Black Text) */
+.affiliation {
+    color: #000;
+    font-size: 8px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 12px 20px;
+  color: rgb(49, 38, 38);
+  height: 15vh;
+}
+
+/* Logo */
 .logo {
-    display: flex;
-    align-items: center;
-    padding-left: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo img {
-    height: 70px;
-    width: auto;
-    display: block;
-    margin-left: 20px;
-    /* Removes unwanted spacing */
-}
-
-.school-name {
-    font-size: 35px;
-    font-weight: bold;
-    color: white;
-    flex-grow: 1;
-    text-align: center;
+  width: 80px;
+  height: 80px;
 }
 
 
@@ -52,6 +100,7 @@ nav {
     display: flex;
     gap: 20px;
     padding-right: 40px;
+    margin-left: 45vh;
 }
 
 .nav-links li {
@@ -61,7 +110,7 @@ nav {
 .nav-links a {
     position: relative;
     font-size: large;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 8px 10px;
     display: block;
@@ -199,7 +248,7 @@ nav {
 .about-text h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #004080;
+    color: #1a5e3a;
 }
 
 .about-text p {
@@ -229,7 +278,7 @@ nav {
 
 .section-title {
     font-size: 2.5rem;
-    color: #004080;
+    color: #1a5e3a;
     margin-bottom: 10px;
 }
 
@@ -268,7 +317,7 @@ nav {
 }
 
 .course-card h3 {
-    color: #004080;
+    color:#1a5e3a;
     margin-bottom: 10px;
     font-size: 1.3rem;
 }
@@ -282,7 +331,7 @@ nav {
 
 .course-card button {
     padding: 10px 20px;
-    background-color: #004080;
+    background-color: #1a5e3a;
     color: white;
     border: none;
     border-radius: 20px;
@@ -291,7 +340,7 @@ nav {
 }
 
 .course-card button:hover {
-    background-color: #0066cc;
+    background-color: #1a5e3a;
 }
 
 .modal {
@@ -340,12 +389,12 @@ nav {
 }
 
 .close-btn:hover {
-    color: #004080;
+    color: #1a5e3a;
 }
 
 .modal-content h2 {
     margin-bottom: 15px;
-    color: #004080;
+    color: #1a5e3a;
 }
 
 .modal-content p {
@@ -376,7 +425,7 @@ nav {
 
 .filter-btn.active,
 .filter-btn:hover {
-  background-color: #004080;
+  background-color: #1a5e3a;
   color: white;
 }
 
@@ -483,6 +532,39 @@ nav {
 .overlay .desc {
   font-size: 13px;
   line-height: 1.4;
+}
+
+.video-box {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.video-link {
+  display: block;
+  height: 100%;
+}
+
+.video-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: white;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  pointer-events: none;
+}
+
+
+.video-box:hover .overlay {
+  opacity: 1;
 }
 
 
@@ -695,7 +777,7 @@ nav {
 .contact-form input:focus,
 .contact-form textarea:focus,
 .contact-form select:focus {
-  border-color: #007acc;
+  border-color: #1a5e3a;
   outline: none;
 }
 
@@ -704,7 +786,7 @@ nav {
   padding: 14px 28px;
   font-size: 16px;
   color: white;
-  background-color: #007acc;
+  background-color: #1a5e3a;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -716,8 +798,70 @@ nav {
   background-color: #005f9a;
 }
 
+/* Admission Banner */
+.admission-banner {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.admission-banner h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+
+
+.school-details, .offerings {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #d32f2f;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1a3a5f;
+}
+
+.course-list p {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #1a3a5f;
+    margin: 5px 0;
+}
+
+.enroll-btn {
+    display: inline-block;
+    background-color: #ffc107;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Note Section */
+.note {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
 .school-footer {
-  background-color: #000e8080;
+  background-color: #1a5e3a;
   color: #fff;
   font-family: 'Segoe UI', sans-serif;
   padding: 40px 20px 0;
@@ -773,7 +917,7 @@ nav {
   text-align: center;
   margin-top: 30px;
   padding: 15px 0;
-  background-color: #00108f80;
+  background-color: #1a5e3a;
   font-size: 15px;
   border-top: 1px solid #333;
 }
@@ -785,6 +929,44 @@ nav {
   to { opacity: 1; transform: scale(1); }
 }
 
+.social-buttons {
+  position: fixed;
+  left: 20px;
+  top: 70%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10000;
+}
+
+.social-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+}
+
+/* Optional: color backgrounds for each platform */
+.social-btn.whatsapp { background: #25D366; }
+.social-btn.youtube { background: #FF0000; }
+.social-btn.facebook { background: #1877F2; }
+.social-btn.instagram { background: #E1306C; }
 
 /* MEDIA QUERY FOR SMALL SCREENS */
 @media (max-width: 768px) {
