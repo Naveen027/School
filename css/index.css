@@ -117,6 +117,9 @@ nav {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+.menu-icons {
+  display: none;
+}
 
 .hamburger,
 .close-icon {
