@@ -1,0 +1,108 @@
+/* ---------- MOBILE VIEW ---------- */
+@media (max-width: 768px) {
+  .menu-icons {
+    display: block;
+  }
+
+  .navbar {
+    padding: 10px 10px;
+    height: auto;
+  }
+
+  .logo img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .name img {
+    width: 210px;
+  }
+
+  /* Show hamburger */
+  .menu-icons {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger,
+  .close-icon {
+    display: block;
+    font-size: 28px;
+    color: #000;
+  }
+
+  .close-icon {
+    display: none;
+  }
+
+  /* Nav menu hidden by default */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 15px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* When menu opens */
+  .nav-links.show {
+    max-height: 500px;
+  }
+
+  /* Hide desktop spacing */
+  .nav-links {
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+
+  .about-text h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .courses-section {
+    background-color: #000e8080;
+    padding: 20px 20px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+    color: #ffffff;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: #cdc5c5;
+    margin-bottom: 30px;
+  }
+
+  .submit-btn {
+    margin-left: 45px;
+  }
+
+  .gallery-section .section-title {
+    color: #004080;
+  }
+
+}

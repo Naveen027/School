@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>School Website</title>
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="index.js" defer></script>
 </head>
 
 <body>
+
+    <!-- FLOATING POPUP -->
+    <div id="floatingPopup">
+        <span id="floatingClose">&times;</span>
+        <img src="images/popup.jpeg" alt="Popup">
+    </div>
 
     <header>
         <nav class="navbar">
             <div class="logo">
                 <img src="images/Screenshot 2026-01-22 161715.png" alt="School Logo">
                 <span class="name">
-                   <img src="images/name.png" alt="" srcset="">
+                    <img src="images/name.png" alt="" srcset="">
                 </span>
 
                 <!-- Hamburger and Close Icons -->
@@ -31,9 +38,9 @@
                     <li><a href="#courses">Courses</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <!-- Mobile dropdown items -->
-                    <li class="mobile-only"><a href="#photos">photos</a></li>
+                    <!-- <li class="mobile-only"><a href="#photos">photos</a></li>
                     <li class="mobile-only"><a href="#awards">Awards</a></li>
-                    <li class="mobile-only"><a href="#celebrations">Celebrations</a></li>
+                    <li class="mobile-only"><a href="#celebrations">Celebrations</a></li> -->
                     <li><a href="#contact">Contact Us</a></li>
 
                     <!-- Desktop dropdown -->
@@ -54,8 +61,7 @@
 
 
     <section class="slider">
-        <div class="slide active"
-            style="background-image: url('images/slider1.webp');">
+        <div class="slide active" style="background-image: url('images/slider1.webp');">
             <div class="slide-text">
                 <h1>Inspiring Young Minds</h1>
                 <p>Empowering students to think, learn and lead</p>
@@ -70,16 +76,14 @@
             </div>
         </div>
 
-        <div class="slide"
-            style="background-image: url('images/slider2.png');">
+        <div class="slide" style="background-image: url('images/slider2.png');">
             <div class="slide-text">
                 <h1>Discipline & Excellence</h1>
                 <p>Instilling values that shape the leaders of tomorrow</p>
             </div>
         </div>
 
-        <div class="slide"
-            style="background-image: url('images/slider4.webp');">
+        <div class="slide" style="background-image: url('images/slider4.webp');">
             <div class="slide-text">
                 <h1>Creative Learning</h1>
                 <p>Encouraging innovation and critical thinking</p>
@@ -610,14 +614,14 @@
 
         <!-- Floating Social Media Buttons -->
         <div class="social-buttons">
-            <a href="https://wa.me/919019040426?text=Hello%20I%20would%20like%20to%20know%20more%20about%20your%20school"
+            <a href="https://wa.me/919242119456?text=Hello%20I%20would%20like%20to%20know%20more%20about%20your%20school"
                 target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
             </a>
 
 
             <!-- YouTube -->
-            <a href="https://www.youtube.com/@ABCPublicSchool" target="_blank" class="social-btn youtube"
+            <a href="https://www.youtube.com/@nationalislamicschool" target="_blank" class="social-btn youtube"
                 title="Subscribe on YouTube">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
                     alt="YouTube">
@@ -637,59 +641,20 @@
             </a>
         </div>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const hamburger = document.getElementById('hamburger');
-                const closeIcon = document.getElementById('closeIcon');
-                const navLinks = document.getElementById('navLinks');
 
-                // Show menu
-                hamburger.addEventListener('click', () => {
-                    navLinks.classList.add('show');
-                    hamburger.style.display = 'none';
-                    closeIcon.style.display = 'block';
+        <!-- <script>
+            document.addEventListener("DOMContentLoaded", function () {
+
+                setTimeout(function () {
+                    document.getElementById("floatingPopup").style.display = "block";
+                }, 2000);
+
+                document.getElementById("floatingClose").addEventListener("click", function () {
+                    document.getElementById("floatingPopup").style.display = "none";
                 });
 
-                // Hide menu
-                closeIcon.addEventListener('click', () => {
-                    navLinks.classList.remove('show');
-                    closeIcon.style.display = 'none';
-                    hamburger.style.display = 'block';
-                });
-
-                // Hide menu when any link is clicked
-                document.querySelectorAll('.nav-links a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        navLinks.classList.remove('show');
-                        closeIcon.style.display = 'none';
-                        hamburger.style.display = 'block';
-                    });
-                });
             });
-        </script>
-        <script>
-            document.getElementById('whatsappForm').addEventListener('submit', function (e) {
-                e.preventDefault(); // prevent default form submit
-
-                // Get form values
-                const name = encodeURIComponent(document.getElementById('name').value);
-                const email = encodeURIComponent(document.getElementById('email').value);
-                const phone = encodeURIComponent(document.getElementById('phone').value);
-                const admissionClass = encodeURIComponent(document.getElementById('class').value);
-                const message = encodeURIComponent(document.getElementById('message').value);
-
-                // Your WhatsApp number with country code (no + sign)
-                const whatsappNumber = "919242119456"; // Replace with your school number
-
-                // Construct WhatsApp message
-                const whatsappMessage = `*Admission Enquiry*%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AClass: ${admissionClass}%0AMessage: ${message}`;
-
-                // Redirect to WhatsApp
-                const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-                window.open(whatsappURL, '_blank');
-            });
-        </script>
-
+        </script> -->
 </body>
 
 
