@@ -10,39 +10,41 @@ body {
 }
 
 #floatingPopup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    max-width: 400px;      /* adjust width */
-    max-height: 480vh;      /* adjust height */
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    display: none;
-    z-index: 9999;
-    overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  /* adjust width */
+  max-height: 480vh;
+  /* adjust height */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 9999;
+  overflow: hidden;
 }
 
 #floatingPopup img {
-    width: 100%;
-    height: auto;
-    max-height: 80vh;
-    object-fit: contain;
-    border-radius: 12px;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 12px;
 }
 
 #floatingClose {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    font-size: 22px;
-    cursor: pointer;
-    font-weight: bold;
-    background: #fff;
-    border-radius: 50%;
-    padding: 2px 6px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
 }
 
 .menu-icons {
@@ -160,14 +162,15 @@ nav {
   /* Slightly greyish */
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  
+
 }
 
 .slide::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45); /* black shade */
+  background: rgba(0, 0, 0, 0.45);
+  /* black shade */
   z-index: 1;
 }
 
@@ -904,7 +907,7 @@ ul {
   text-align: center;
   margin-top: 30px;
   padding: 15px 0;
- background: linear-gradient(135deg, #3fa9a4 0%, #4a90e2 100%);
+  background: linear-gradient(135deg, #3fa9a4 0%, #4a90e2 100%);
   font-size: 15px;
   border-top: 1px solid #333;
 }
@@ -969,8 +972,12 @@ ul {
   background: #1877F2;
 }
 
-.social-btn.instagram {
-  background: #E1306C;
+.social-btn.call {
+  background: #25d366;
+  /* call/phone green */
+ 
 }
-
+.social-btn.call img{
+   border-radius: 16px;
+}
 /* MEDIA QUERY FOR SMALL SCREENS */
