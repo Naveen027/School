@@ -981,3 +981,8 @@ ul {
    border-radius: 16px;
 }
 /* MEDIA QUERY FOR SMALL SCREENS */
+
+.offerings img{
+  height: 100px;
+  width: 100px;
+}
