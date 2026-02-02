@@ -1,71 +1,70 @@
-
+// .-------------------------------------------------------------banner----------------------------------
 window.addEventListener("load", function () {
 
-    setTimeout(function () {
-        document.getElementById("floatingPopup").style.display = "block";
-    }, 2000);
+  setTimeout(function () {
+    document.getElementById("floatingPopup").style.display = "block";
+  }, 2000);
 
-    document.getElementById("floatingClose").onclick = function () {
-        document.getElementById("floatingPopup").style.display = "none";
-    };
+  document.getElementById("floatingClose").onclick = function () {
+    document.getElementById("floatingPopup").style.display = "none";
+  };
 
 });
 
-
+// -------------------------------------------------------------hamburger icon-----------------------------------
 const hamburger = document.getElementById("hamburger");
 const closeIcon = document.getElementById("closeIcon");
 const navLinks = document.getElementById("navLinks");
 const links = navLinks.querySelectorAll("a");
 
 hamburger.addEventListener("click", () => {
-    navLinks.classList.add("show");
-    hamburger.style.display = "none";
-    closeIcon.style.display = "block";
+  navLinks.classList.add("show");
+  hamburger.style.display = "none";
+  closeIcon.style.display = "block";
 });
 
 closeIcon.addEventListener("click", closeMenu);
 
 // Close menu when clicking any link
 links.forEach(link => {
-    link.addEventListener("click", closeMenu);
+  link.addEventListener("click", closeMenu);
 });
 
 function closeMenu() {
-    navLinks.classList.remove("show");
-    closeIcon.style.display = "none";
-    hamburger.style.display = "block";
+  navLinks.classList.remove("show");
+  closeIcon.style.display = "none";
+  hamburger.style.display = "block";
 }
-
+// -------------------------------------------------------------homepageslider------------------------------
 const slides = document.querySelectorAll(".slide");
 let index = 0;
 
 function showSlide() {
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[index].classList.add("active");
-    index = (index + 1) % slides.length;
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[index].classList.add("active");
+  index = (index + 1) % slides.length;
 }
 
 setInterval(showSlide, 1500);
-
+// ------------------------------------------------------------Enquiry form---------------------------------
 document.getElementById('whatsappForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // prevent default form submit
+  e.preventDefault();
 
-    // Get form values
-    const name = encodeURIComponent(document.getElementById('name').value);
-    const email = encodeURIComponent(document.getElementById('email').value);
-    const phone = encodeURIComponent(document.getElementById('phone').value);
-    const admissionClass = encodeURIComponent(document.getElementById('class').value);
-    const message = encodeURIComponent(document.getElementById('message').value);
 
-    // Your WhatsApp number with country code (no + sign)
-    const whatsappNumber = "919242119456"; // Replace with your school number
+  const name = encodeURIComponent(document.getElementById('name').value);
+  const email = encodeURIComponent(document.getElementById('email').value);
+  const phone = encodeURIComponent(document.getElementById('phone').value);
+  const admissionClass = encodeURIComponent(document.getElementById('class').value);
+  const message = encodeURIComponent(document.getElementById('message').value);
 
-    // Construct WhatsApp message
-    const whatsappMessage = `*Admission Enquiry*%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AClass: ${admissionClass}%0AMessage: ${message}`;
 
-    // Redirect to WhatsApp
-    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-    window.open(whatsappURL, '_blank');
+  const whatsappNumber = "919242119456"; // 
+
+  const whatsappMessage = `*Admission Enquiry*%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AClass: ${admissionClass}%0AMessage: ${message}`;
+
+  // Redirect to WhatsApp
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  window.open(whatsappURL, '_blank');
 });
 
 // ------------------------------------------------------------------------chatbot------------------------------------------
@@ -214,5 +213,54 @@ function contactInfo() {
   botMsg("<b>+91 98765 43210</b><br>🕘 9:00 AM – 5:00 PM (Mon–Sat)");
 
   setOptions([]);
+}
+
+
+
+// -------------------------------------------------enroll forms of jamia pu and asian degree--------------------
+
+
+const WHATSAPP_NUMBER = "919876543210"; 
+
+function openForm(formId) {
+  document.getElementById("overlayform").style.display = "block";
+  document.getElementById(formId).style.display = "block";
+}
+
+function closeAllForms() {
+  document.getElementById("overlayform").style.display = "none";
+  document.querySelectorAll(".popup-form").forEach(f => f.style.display = "none");
+}
+
+/* JAMIA FORM WHATSAPP */
+function sendJamiaWhatsApp(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("jamiaName").value;
+  const course = document.getElementById("jamiaClass").value;
+  const phone = document.getElementById("jamiaPhone").value;
+
+  const msg = `Jamia PU College Enquiry:
+Name: ${name}
+Applying For: ${course}
+Mobile: ${phone}`;
+
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
+}
+
+/* AIU FORM WHATSAPP */
+function sendAIUWhatsApp(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("aiuName").value;
+  const course = document.getElementById("aiuCourse").value;
+  const phone = document.getElementById("aiuPhone").value;
+
+  const msg = `Asian International University Enquiry:
+Name: ${name}
+Course: ${course}
+Mobile: ${phone}`;
+
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
 }
 

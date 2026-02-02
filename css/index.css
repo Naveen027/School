@@ -1,14 +1,19 @@
-/* Reset and global */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* width: 100%; */
+  /* overflow-x: hidden; */
+}
+html, body {
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Segoe UI', sans-serif;
 }
-
+/* --------------------------------------------------------------banner---------------------- */
 #floatingPopup {
   position: fixed;
   top: 50%;
@@ -46,7 +51,7 @@ body {
   border-radius: 50%;
   padding: 2px 6px;
 }
-
+/* ----------------------------------------------------navigtion bar------------------------------ */
 .menu-icons {
   display: none;
 }
@@ -88,9 +93,9 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
-  padding-right: 40px;
-  margin-left: 35vh;
+  gap: 8px;
+  /* padding-right: 40px; */
+  margin-left: 55vh;
 }
 
 .nav-links li {
@@ -109,7 +114,7 @@ nav {
 }
 
 /* Underline animation */
-.nav-links a::after {
+/* .nav-links a::after {
   content: '';
   position: absolute;
   left: 0;
@@ -118,30 +123,30 @@ nav {
   width: 0%;
   background-color: white;
   transition: width 0.3s ease;
-}
+} */
 
-.nav-links a:hover::after {
+/* .nav-links a:hover::after {
   width: 100%;
-}
+} */
 
-.nav-links .mobile-only {
+/* .nav-links .mobile-only {
   display: none;
-}
+} */
 
 /* Used for toggling the menu open */
-.nav-links.show {
+/* .nav-links.show {
   display: flex !important;
   flex-direction: column;
-}
+} */
 
 
 
-.hamburger,
+/* .hamburger,
 .close-icon {
   display: none;
-}
+} */
 
-/* Slider container */
+/*--------------------------------------------------------- Slider container homepage---------------------- */
 .slider {
   position: relative;
   width: 100%;
@@ -159,7 +164,6 @@ nav {
   background-size: cover;
   background-position: center;
   filter: grayscale(50%);
-  /* Slightly greyish */
   opacity: 0;
   transition: opacity 1s ease-in-out;
 
@@ -175,13 +179,13 @@ nav {
 }
 
 
-/* Active slide */
+
 .slide.active {
   opacity: 1;
   z-index: 1;
 }
 
-/* Text on slide */
+
 .slide-text {
   position: absolute;
   top: 40%;
@@ -203,7 +207,7 @@ nav {
   font-size: 1.2rem;
 }
 
-
+/* -----------------------------------------------------------------------About NIS section----------------- */
 .about-section {
   padding: 60px 20px;
   background-color: #f5faff;
@@ -213,15 +217,16 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  max-width: 1200px;
-  margin: auto;
+  gap: 45px;
+  max-width: 1400px;
+  /* margin: auto; */
   flex-wrap: wrap;
 }
 
 .about-text {
   flex: 1;
   min-width: 300px;
+  margin-left: 80px;
 }
 
 .about-text h2 {
@@ -241,6 +246,7 @@ nav {
   flex: 1;
   min-width: 300px;
   text-align: center;
+   margin-left: 60px;
 }
 
 .about-image img {
@@ -249,6 +255,7 @@ nav {
   object-fit: fill;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+ 
 }
 
 .courses-section {
@@ -292,8 +299,8 @@ nav {
 }
 
 .course-card img {
-  width: 60px;
-  height: 60px;
+  width: 110px;
+  height: 110px;
   margin-bottom: 20px;
 }
 
@@ -324,66 +331,7 @@ nav {
   background-color: #1a5e3a;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.modal-content {
-  background: white;
-  max-width: 600px;
-  width: 90%;
-  padding: 30px;
-  border-radius: 10px;
-  position: relative;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.close-btn {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 24px;
-  color: #888;
-  cursor: pointer;
-}
-
-.close-btn:hover {
-  color: #1a5e3a;
-}
-
-.modal-content h2 {
-  margin-bottom: 15px;
-  color: #1a5e3a;
-}
-
-.modal-content p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
-}
-
+/* ----------------------------------------------gallery section---------------------------------- */
 .gallery-section {
   padding: 60px 20px;
   background-color: #fff;
@@ -497,18 +445,21 @@ nav {
   width: 100%;
   padding: 15px;
   transform: translateY(100%);
-  transition: all 0.3s ease;
   opacity: 0;
+  transition: all 0.3s ease;
 }
+
 
 .gallery-image-wrapper:hover .overlay {
   transform: translateY(0);
   opacity: 1;
+  /* display: block; */
 }
 
 .overlay h3 {
   margin: 0 0 5px;
   font-size: 18px;
+  color: white;
 }
 
 .overlay .date {
@@ -552,8 +503,10 @@ nav {
 
 
 .video-box:hover .overlay {
+  transform: translateY(0);
   opacity: 1;
 }
+
 
 
 .principal-section {
@@ -561,7 +514,7 @@ nav {
   background-color: #f4f4f4;
   padding: 60px 20px;
 }
-
+/* --------------------------------------------------------principal section-------------------------- */
 .principal-container {
   max-width: 1200px;
   margin: auto;
@@ -657,7 +610,6 @@ nav {
   line-height: 1.6;
 }
 
-
 /* === Faculty Section === */
 .faculty-section {
   padding: 60px 20px;
@@ -717,7 +669,7 @@ nav {
   font-size: 14px;
   color: #555;
 }
-
+/* ----------------------------------------------------contact section------------------------------ */
 .contact-section {
   background: #f4f6f9;
   padding: 60px 20px;
@@ -812,7 +764,7 @@ nav {
 }
 
 h3 {
-  color: #ffffff;
+  color: #1a3a5f;
   font-size: 1.5rem;
 }
 
@@ -836,6 +788,7 @@ ul {
   background-color: #ffc107;
   color: black;
   padding: 10px 20px;
+  border: none;
   font-weight: bold;
   border-radius: 5px;
   margin-top: 10px;
@@ -843,7 +796,7 @@ ul {
 
 /* Note Section */
 .note {
-  background-color: #d32f2f;
+  background-color: #676767c2;
   color: white;
   padding: 10px;
   text-align: center;
@@ -856,7 +809,7 @@ ul {
   font-family: 'Segoe UI', sans-serif;
   padding: 40px 20px 0;
 }
-
+/* ---------------------------------------------------------footer------------------------------------------ */
 .footer-content {
   display: flex;
   flex-wrap: wrap;
@@ -913,19 +866,7 @@ ul {
 }
 
 
-/* Optional animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
+/* ------------------------------------------------social  media section------------------------------------- */
 .social-buttons {
   position: fixed;
   left: 20px;
@@ -959,7 +900,7 @@ ul {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
-/* Optional: color backgrounds for each platform */
+
 .social-btn.whatsapp {
   background: #25D366;
 }
@@ -975,18 +916,20 @@ ul {
 .social-btn.call {
   background: #25d366;
   /* call/phone green */
- 
 }
-.social-btn.call img{
-   border-radius: 16px;
-}
-/* MEDIA QUERY FOR SMALL SCREENS */
 
-.offerings img{
+.social-btn.call img {
+  border-radius: 16px;
+}
+
+
+
+.offerings img {
   height: 100px;
   width: 100px;
 }
 
+/* ------------------------------------------------------------------------------chatbot-------------------- */
 #chatbot-toggle {
   position: fixed;
   bottom: 20px;
@@ -1007,7 +950,7 @@ ul {
   width: 320px;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   display: none;
   flex-direction: column;
   z-index: 9999;
@@ -1030,7 +973,8 @@ ul {
   overflow-y: auto;
 }
 
-.bot-msg, .user-msg {
+.bot-msg,
+.user-msg {
   margin-bottom: 10px;
   padding: 8px 10px;
   border-radius: 8px;
@@ -1061,4 +1005,72 @@ ul {
   cursor: pointer;
   border-radius: 6px;
   font-size: 14px;
+}
+
+.enroll-section {
+    gap: 20px;
+}
+
+
+
+.enroll-btn:hover {
+    background: #094062;
+    color: white;
+}
+
+/* Overlay */
+.overlayform {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 99;
+}
+
+/* Popup Form */
+.popup-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px -2px 12px rgb(94, 94, 94);
+    background: #fff;
+    width: 360px;
+    padding: 25px;
+    border-radius: 10px;
+    display: none;
+    z-index: 100;
+}
+
+.popup-form h2 {
+    margin-bottom: 15px;
+    color: #0b3c5d;
+}
+
+.popup-form input,
+.popup-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.popup-form button {
+    width: 100%;
+    padding: 12px;
+    background: #25D366;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    cursor: pointer;
 }

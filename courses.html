@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Courses Offered | National Islamic School & Jamia PU College</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <style>
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #0b3c5d;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .course-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .course-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .course-header h2 {
+            font-size: 22px;
+            color: #0b3c5d;
+        }
+
+        .toggle-btn {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0b3c5d;
+        }
+
+        .course-content {
+            margin-top: 15px;
+            display: none;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        .course-content p {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+        }
+
+        .highlight {
+            background: #0b3c5d;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .highlight h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+            color: white;
+        }
+
+        .programs {
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .program-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.38);
+            font-weight: 500;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/Screenshot 2026-01-22 161715.png" alt="School Logo">
+                <span class="name">
+                    <img src="images/name.png" alt="" srcset="">
+                </span>
+
+                <!-- Hamburger and Close Icons -->
+                <div class="menu-icons">
+                    <div class="hamburger" id="hamburger">☰</div>
+                    <div class="close-icon" id="closeIcon">×</div>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="index.html">Gallery</a></li>
+                    <li><a href="index.html">Contact Us</a></li>
+                </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Courses Offered</h1>
+        <p class="subtitle">National Islamic School & Jamia PU College</p>
+
+        <!-- Pre Primary -->
+        <div class="course-card">
+            <div class="course-header" onclick="toggleCourse(this)">
+                <h2>Pre-Primary (LKG & UKG)</h2>
+                <span class="toggle-btn">+</span>
+            </div>
+            <div class="course-content">
+                <p>Our Pre-Primary program focuses on building strong foundational skills through joyful learning
+                    experiences.</p>
+                <ul>
+                    <li>Play-based learning methodology</li>
+                    <li>Storytelling & rhymes</li>
+                    <li>Motor skill and sensory development</li>
+                    <li>Introduction to letters, numbers & colors</li>
+                    <li>Social and emotional growth</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Primary -->
+        <div class="course-card">
+            <div class="course-header" onclick="toggleCourse(this)">
+                <h2>Primary School (1st to 5th Standard)</h2>
+                <span class="toggle-btn">+</span>
+            </div>
+            <div class="course-content">
+                <p>This stage focuses on academic basics and character development.</p>
+                <ul>
+                    <li>Reading, writing & numeracy skills</li>
+                    <li>Environmental studies & general knowledge</li>
+                    <li>Moral values and discipline</li>
+                    <li>Creative arts & physical education</li>
+                    <li>Continuous assessment system</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Middle School -->
+        <div class="course-card">
+            <div class="course-header" onclick="toggleCourse(this)">
+                <h2>Middle School (6th to 8th Standard)</h2>
+                <span class="toggle-btn">+</span>
+            </div>
+            <div class="course-content">
+                <p>Students receive deeper academic exposure with practical learning.</p>
+                <ul>
+                    <li>Science with lab activities</li>
+                    <li>Mathematics & analytical thinking</li>
+                    <li>Basic computer education</li>
+                    <li>Project-based learning</li>
+                    <li>Personality & confidence development</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- High School -->
+        <div class="course-card">
+            <div class="course-header" onclick="toggleCourse(this)">
+                <h2>High School (9th & 10th Standard)</h2>
+                <span class="toggle-btn">+</span>
+            </div>
+            <div class="course-content">
+                <p>Board-oriented education with strong academic focus.</p>
+                <ul>
+                    <li>10th STD – Jamia Board</li>
+                    <li>PUC 2nd Year – Jamia Board</li>
+                    <li>Experienced faculty & exam guidance</li>
+                    <li>Regular tests & revision sessions</li>
+                    <li>Career counseling support</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Exam Highlight -->
+        <div class="highlight">
+            <h3>ONLINE EXAMINATIONS</h3>
+            <p>February 2025 – 2026</p>
+            <p>Conducted under Jamia Board guidelines</p>
+        </div>
+
+        <!-- Higher Education -->
+        <div class="programs">
+            <h1>
+                Asian International University,Manipur
+            </h1>
+            <h1>Offering Admissions In</h1>
+
+            <div class="program-grid">
+                <div class="program-box">UG Programs</div>
+                <div class="program-box">PG Programs</div>
+                <div class="program-box">Engineering</div>
+                <div class="program-box">Law</div>
+                <div class="program-box">Pharmacy</div>
+                <div class="program-box">Nursing</div>
+                <div class="program-box">Paramedical Courses</div>
+                <div class="program-box">Ph.D. Programs</div>
+            </div>
+        </div>
+    </div>
+    <footer class="school-footer">
+        <div class="footer-content">
+
+            <div class="footer-left">
+                <h3>National Islamic School</h3>
+                <p><img src="https://img.icons8.com/ios-filled/20/000000/phone.png" /> +91 9242119456</p>
+                <p><img src="https://img.icons8.com/ios-filled/20/000000/email.png" />
+                    contact@NationalIslamicSchool.edu.in
+                </p>
+                <p><img src="https://img.icons8.com/ios-filled/20/000000/address.png" />National Islamic
+                    School,kalaburagi, India</p>
+            </div>
+
+
+            <div class="footer-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.2950410840544!2d76.86176677493377!3d17.349530283531262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc8c7226f81b7b3%3A0xce3eeb73ba184a4f!2sNational%20Islamic%20School%20(NIS)%20Kalburgi!5e0!3m2!1sen!2sin!4v1769096774967!5m2!1sen!2sin"
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 National Islamic School | Designed & Developed by Naveen Bellad</p>
+        </div>
+    </footer>
+
+
+        <script>const hamburger = document.getElementById("hamburger");
+        const closeIcon = document.getElementById("closeIcon");
+        const navLinks = document.getElementById("navLinks");
+        const links = navLinks.querySelectorAll("a");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.add("show");
+            hamburger.style.display = "none";
+            closeIcon.style.display = "block";
+        });
+
+        closeIcon.addEventListener("click", closeMenu);
+
+        // Close menu when clicking any link
+        links.forEach(link => {
+            link.addEventListener("click", closeMenu);
+        });
+
+        function closeMenu() {
+            navLinks.classList.remove("show");
+            closeIcon.style.display = "none";
+            hamburger.style.display = "block";
+        }
+    </script>
+    <script>
+        function toggleCourse(element) {
+            const content = element.nextElementSibling;
+            const btn = element.querySelector('.toggle-btn');
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                btn.textContent = "+";
+            } else {
+                content.style.display = "block";
+                btn.textContent = "−";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

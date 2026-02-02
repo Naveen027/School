@@ -75,12 +75,23 @@
     padding-right: 0;
   }
 
-
+/* -------------------------------------------------------------------------about------------------------------ */
   .about-text h2 {
     font-size: 1.5rem;
     text-align: center;
   }
 
+  .about-text{
+    margin-left: 0px;
+  }
+
+  .about-image {
+    margin-left: 0px;
+  }
+
+  .about-text p{
+    text-align: center;
+  }
   .courses-section {
     background-color: #000e8080;
     padding: 20px 20px;
@@ -101,8 +112,23 @@
     margin-left: 45px;
   }
 
+  .gallery-grid {
+    justify-content: space-between; /* instead of center */
+    gap: 12px; /* reduce gap for better fit */
+  }
+
+  .gallery-item {
+    flex: 0 0 calc(50% - 6px); /* 50% minus half of gap */
+    max-width: calc(50% - 6px);
+    display: block; /* ensure flex item is block-level */
+  }
+
+
+
   .gallery-section .section-title {
     color: #004080;
   }
-
+ .admission-banner h2 {
+  font-size: 1.5rem;
+ }
 }
