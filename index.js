@@ -220,7 +220,7 @@ function contactInfo() {
 // -------------------------------------------------enroll forms of jamia pu and asian degree--------------------
 
 
-const WHATSAPP_NUMBER = "919876543210"; 
+const WHATSAPP_NUMBER = "919242119456"; 
 
 function openForm(formId) {
   document.getElementById("overlayform").style.display = "block";
