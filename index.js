@@ -144,7 +144,7 @@ function startBot() {
 
 /* ---------- SCHOOL ---------- */
 function schoolAdmission() {
-  userMsg("School Admission");
+  userMsg("NIS School Admission");
   botMsg("Please select the standard:");
 
   setOptions([
@@ -159,7 +159,7 @@ function admissionDetails(standard) {
 
   setOptions([
     { text: "📅 Admission Date", action: () => showInfo(schoolAdmission, "Admissions open from 15th March to 30th April") },
-    { text: "💰 Admission Fee", action: () => showInfo(schoolAdmission, "Fees range between ₹25,000 – ₹40,000 per year") },
+    // { text: "💰 Admission Fee", action: () => showInfo(schoolAdmission, "Fees range between ₹25,000 – ₹40,000 per year") },
     { text: "🎂 Age Criteria", action: () => showInfo(schoolAdmission, "Minimum age 5+ years as on 1st June") },
     { text: "📄 Required Documents", action: () => showInfo(schoolAdmission, "Birth Certificate, Aadhar Card, Previous Report Card, 2 Photos") },
     { text: "⏰ School Timing", action: () => showInfo(schoolAdmission, "School timing: 8:45 AM – 3:30 PM") },
@@ -170,13 +170,13 @@ function admissionDetails(standard) {
 
 /* ---------- PU COLLEGE ---------- */
 function puAdmission() {
-  userMsg("Jamia PU College Admission");
+  userMsg("Jamia 10th and PU College Admission");
   botMsg("Please select an option:");
 
   setOptions([
     { text: "📚 Streams Offered", action: () => showInfo(puAdmission, "Science, Commerce & Arts streams available") },
     { text: "✅ Eligibility", action: () => showInfo(puAdmission, "Pass in SSLC / 10th from recognized board") },
-    { text: "💰 Fee Structure", action: () => showInfo(puAdmission, "Fees range between ₹45,000 – ₹85,000 per year") },
+    // { text: "💰 Fee Structure", action: () => showInfo(puAdmission, "Fees range between ₹45,000 – ₹85,000 per year") },
     { text: "📄 Required Documents", action: () => showInfo(puAdmission, "SSLC Marks Card, TC, Aadhar Card") },
     { text: "⏰ College Timing", action: () => showInfo(puAdmission, "College timing: 9:00 AM – 4:00 PM") },
     { text: "☎ Contact Admission Office", action: () => { saveState(puAdmission); contactInfo(); } }
@@ -191,7 +191,7 @@ function degreeAdmission() {
   setOptions([
     { text: "🎓 Courses Available", action: () => showInfo(degreeAdmission, "UG,PG,ENGINEERING,LAW,PHARMACY,NURSING,PARAMEDICAL COURSES") },
     { text: "✅ Eligibility", action: () => showInfo(degreeAdmission, "PU / 12th pass from recognized board") },
-    { text: "💰 Fee Structure", action: () => showInfo(degreeAdmission, "Fees start from ₹60,000 per year") },
+    // { text: "💰 Fee Structure", action: () => showInfo(degreeAdmission, "Fees start from ₹60,000 per year") },
     { text: "💼 Internship & Placement", action: () => showInfo(degreeAdmission, "Internships and placement assistance available") },
     { text: "📄 Required Documents", action: () => showInfo(degreeAdmission, "PU Marks Card, TC, Migration Certificate, Aadhar") },
     { text: "☎ Contact Admission Office", action: () => { saveState(degreeAdmission); contactInfo(); } }
