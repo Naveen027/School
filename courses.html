@@ -10,6 +10,60 @@
 
 
     <style>
+        .container {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            font-size: 16px;
+            border: none;
+            background: #007bff;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 25rem;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 35px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .btn {
+                width: 80%;
+                font-size: 15px;
+                margin-left: 35px;
+                margin-bottom: 10px;
+            }
+        }
+
         h1 {
             text-align: center;
             margin-bottom: 10px;
@@ -255,7 +309,7 @@
                 <div class="jamiadoc">
                     <div class="program-box">12th</div>
                     <div class="program-box">
-                        <div class="jamiadocheading">Documents for 10th Jamia Board</div>
+                        <div class="jamiadocheading">Documents for 12th Jamia Board</div>
                         <ul>
                             <li>Student photo</li>
                             <li>Student aadhar</li>
@@ -294,8 +348,19 @@
                 <div class="program-box">Ph.D. Programs</div>
             </div>
         </div>
+
+    </div>
+    <!-- -------------------------------------------------------------------button----------------------- -->
+    <div class="container">
+        <button class="btn" onclick="openImage()">View Course details</button>
+        <button class="btn" onclick="openPDF()">View fee details</button>
     </div>
 
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">×</span>
+        <img class="modal-content" src="images/courses.jpeg" alt="Preview">
+    </div>
     <!-- ---------------------------------------------------footer-------------------------------------------------- -->
     <footer class="school-footer">
         <div class="footer-content">
@@ -365,7 +430,21 @@
             }
         }
     </script>
+    <script>
+        function openImage() {
+            document.getElementById("imageModal").style.display = "flex";
+        }
 
+        function closeImage() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        function openPDF() {
+            window.open("images/fees.pdf", "_blank");
+        }
+
+
+    </script>
 </body>
 
 </html>
