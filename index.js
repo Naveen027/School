@@ -178,7 +178,7 @@ function puAdmission() {
     { text: "✅ Eligibility", action: () => showInfo(puAdmission, "Pass in SSLC / 10th from recognized board") },
     // { text: "💰 Fee Structure", action: () => showInfo(puAdmission, "Fees range between ₹45,000 – ₹85,000 per year") },
     { text: "📄 Required Documents", action: () => showInfo(puAdmission, "SSLC Marks Card, TC, Aadhar Card") },
-    { text: "⏰ College Timing", action: () => showInfo(puAdmission, "College timing: 9:00 AM – 4:00 PM") },
+    // { text: "⏰ College Timing", action: () => showInfo(puAdmission, "College timing: 9:00 AM – 4:00 PM") },
     { text: "☎ Contact Admission Office", action: () => { saveState(puAdmission); contactInfo(); } }
   ]);
 }
@@ -192,7 +192,7 @@ function degreeAdmission() {
     { text: "🎓 Courses Available", action: () => showInfo(degreeAdmission, "UG,PG,ENGINEERING,LAW,PHARMACY,NURSING,PARAMEDICAL COURSES") },
     { text: "✅ Eligibility", action: () => showInfo(degreeAdmission, "PU / 12th pass from recognized board") },
     // { text: "💰 Fee Structure", action: () => showInfo(degreeAdmission, "Fees start from ₹60,000 per year") },
-    { text: "💼 Internship & Placement", action: () => showInfo(degreeAdmission, "Internships and placement assistance available") },
+    // { text: "💼 Internship & Placement", action: () => showInfo(degreeAdmission, "Internships and placement assistance available") },
     { text: "📄 Required Documents", action: () => showInfo(degreeAdmission, "PU Marks Card, TC, Migration Certificate, Aadhar") },
     { text: "☎ Contact Admission Office", action: () => { saveState(degreeAdmission); contactInfo(); } }
   ]);
@@ -210,7 +210,7 @@ function showInfo(backFn, text) {
 /* ---------- CONTACT ---------- */
 function contactInfo() {
   botMsg("📞 Admission Office Contact:");
-  botMsg("<b>+91 98765 43210</b><br>🕘 9:00 AM – 5:00 PM (Mon–Sat)");
+  botMsg("<b>+91 9242119456</b><br>🕘 9:00 AM – 5:00 PM (Mon–Sat)");
 
   setOptions([]);
 }
