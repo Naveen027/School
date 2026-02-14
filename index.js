@@ -264,6 +264,9 @@ Mobile: ${phone}`;
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
+
+
+// -------------------------------------------------------------------------------------social media animation------------------
 document.querySelectorAll('.triggerButton').forEach(button => {
   button.addEventListener('click', function (e) {
     e.preventDefault();
@@ -275,14 +278,14 @@ document.querySelectorAll('.triggerButton').forEach(button => {
       container.classList.remove('active');
       menu.classList.remove('active');
     } else {
-      closeMenu();
+      closeMenusocial();
       container.classList.add('active');
       menu.classList.add('active');
     }
   });
 });
 
-function closeMenu() {
+function closeMenusocial() {
   document.querySelectorAll('.radial').forEach(el => el.classList.remove('active'));
   document.querySelectorAll('.radialMenu').forEach(el => el.classList.remove('active'));
 }
