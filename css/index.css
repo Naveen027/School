@@ -55,6 +55,9 @@ body {
 }
 
 /* ----------------------------------------------------navigtion bar------------------------------ */
+header{
+  border-bottom: 5px solid #028e48;
+}
 .menu-icons {
   display: none;
 }
@@ -243,6 +246,7 @@ nav {
   margin-bottom: 15px;
   color: #333;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .about-image {
@@ -939,7 +943,7 @@ ul {
 #chatbot-toggle {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 5px;
   background: #1a73e8;
   color: #fff;
   font-size: 22px;
