@@ -365,14 +365,6 @@ nav {
   color: white;
 }
 
-/* .gallery-item {
-  width: 30%;
-  margin: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  display: none; /* Hide by default */
-
 
 .gallery-item img {
   width: 100%;
@@ -381,11 +373,16 @@ nav {
   border-radius: 10px;
 }
 
-/* When active, show item */
-/* .gallery-item.show {
-  display: block;
-  animation: fadeIn 0.5s ease-in-out;
-} */
+.gallery-image-wrapper:active .overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #1a5e3a;
+  color: white;
+}
 
 /* Animation */
 @keyframes fadeIn {
@@ -460,7 +457,7 @@ nav {
 .gallery-image-wrapper:hover .overlay {
   transform: translateY(0);
   opacity: 1;
-  /* display: block; */
+  display: block;
 }
 
 .overlay h3 {
@@ -870,7 +867,6 @@ ul {
   text-align: center;
   margin-top: 30px;
   padding: 15px 0;
-  background: linear-gradient(135deg, #3fa9a4 0%, #4a90e2 100%);
   font-size: 15px;
   border-top: 1px solid #333;
 }

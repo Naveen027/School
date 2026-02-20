@@ -46,6 +46,33 @@ function showSlide() {
 }
 
 setInterval(showSlide, 1500);
+
+// -----------------------------------------------------------gallery filter button-------------------------
+document.addEventListener("DOMContentLoaded", () => {
+
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const galleryItems = document.querySelectorAll(".gallery-item");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filter = button.getAttribute("data-filter");
+
+      galleryItems.forEach(item => {
+        if (item.getAttribute("data-category") === filter) {
+          item.classList.add("show");
+        } else {
+          item.classList.remove("show");
+        }
+      });
+
+    });
+  });
+
+});
 // ------------------------------------------------------------Enquiry form---------------------------------
 document.getElementById('whatsappForm').addEventListener('submit', function (e) {
   e.preventDefault();

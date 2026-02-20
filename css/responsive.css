@@ -133,9 +133,11 @@
   .gallery-item {
     flex: 0 0 calc(50% - 6px); /* 50% minus half of gap */
     max-width: calc(50% - 6px);
-    display: block; /* ensure flex item is block-level */
+    display: none; /* ensure flex item is block-level */
   }
-
+.gallery-item.show {
+  display: block;
+}
 
 
   .gallery-section .section-title {
