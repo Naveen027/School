@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/responsive.css">
-
-
     <style>
         .container {
             margin-bottom: 10px;
@@ -55,14 +53,6 @@
         }
 
         /* Mobile */
-        @media (max-width: 600px) {
-            .btn {
-                width: 80%;
-                font-size: 15px;
-                margin-left: 35px;
-                margin-bottom: 10px;
-            }
-        }
 
         h1 {
             text-align: center;
@@ -168,6 +158,20 @@
             to {
                 opacity: 1;
                 transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .btn {
+                width: 80%;
+                font-size: 15px;
+                margin-left: 35px;
+                margin-bottom: 10px;
+            }
+
+            .enroll-btn {
+                display: block;
+                margin: 10px auto;
             }
         }
     </style>
@@ -277,16 +281,16 @@
         </div>
 
         <!-----------------------------------------jamia  Exam Highlight ------------------------------------------->
+        <!-- Jamia Highlight -->
         <div class="highlight">
-            <h3>Direct Online Examinations for 10th and 12th </h3>
+            <h3>Direct Online Examinations for 10th and 12th</h3>
             <p>February 2025 – 2026</p>
             <p>Conducted under Jamia Board guidelines</p>
         </div>
-        <!-- Higher Education -->
+
+        <!-- Jamia Section -->
         <div class="programs">
-            <h1>
-                Jamia Pu College
-            </h1>
+            <h1>Jamia PU College</h1>
             <h1>Offering Admissions In</h1>
 
             <div class="program-grid">
@@ -296,12 +300,11 @@
                         <div class="jamiadocheading">Documents for 10th Jamia Board</div>
                         <ul>
                             <li>Student photo</li>
-                            <li>Student aadhar</li>
-                            <li> Father aadhar</li>
-                            <li>Mother aadhar</li>
-                            <li>Students sign</li>
-                            <li>Parents sign</li>
-
+                            <li>Student Aadhaar</li>
+                            <li>Father Aadhaar</li>
+                            <li>Mother Aadhaar</li>
+                            <li>Student signature</li>
+                            <li>Parent signature</li>
                         </ul>
                     </div>
                 </div>
@@ -312,29 +315,34 @@
                         <div class="jamiadocheading">Documents for 12th Jamia Board</div>
                         <ul>
                             <li>Student photo</li>
-                            <li>Student aadhar</li>
-                            <li> Father aadhar</li>
-                            <li>Mother aadhar</li>
-                            <li>Students sign</li>
-                            <li>Parents sign</li>
+                            <li>Student Aadhaar</li>
+                            <li>Father Aadhaar</li>
+                            <li>Mother Aadhaar</li>
+                            <li>Student signature</li>
+                            <li>Parent signature</li>
                             <li>SSLC marks card</li>
                         </ul>
                     </div>
                 </div>
             </div>
+
+            <div class="enroll-section">
+                <button class="enroll-btn" onclick="openForm('jamiaForm')">
+                    ENROLL NOW!!
+                </button>
+            </div>
         </div>
-        <!-- ------------------------------------------Asian UG PG Exam Highlight ------------------------------------->
+
+        <!-- AIU Highlight -->
         <div class="highlight">
             <h3>ONLINE EXAMINATIONS</h3>
             <p>February 2025 – 2026</p>
             <p>Conducted under Asian International University guidelines</p>
         </div>
 
-        <!-- Higher Education -->
+        <!-- AIU Section -->
         <div class="programs">
-            <h1>
-                Asian International University,Manipur
-            </h1>
+            <h1>Asian International University, Manipur</h1>
             <h1>Offering Admissions In</h1>
 
             <div class="program-grid">
@@ -347,104 +355,199 @@
                 <div class="program-box">Paramedical Courses</div>
                 <div class="program-box">Ph.D. Programs</div>
             </div>
-        </div>
 
-    </div>
-    <!-- -------------------------------------------------------------------button----------------------- -->
-    <div class="container">
-        <button class="btn" onclick="openImage()">View Course details</button>
-        <button class="btn" onclick="openPDF()">View fee details</button>
-    </div>
-
-    <!-- Image Modal -->
-    <div id="imageModal" class="modal">
-        <span class="close" onclick="closeImage()">×</span>
-        <img class="modal-content" src="images/courses.jpeg" alt="Preview">
-    </div>
-    <!-- ---------------------------------------------------footer-------------------------------------------------- -->
-    <footer class="school-footer">
-        <div class="footer-content">
-
-            <div class="footer-left">
-                <h3>National Islamic School</h3>
-                <p><img src="https://img.icons8.com/ios-filled/20/000000/phone.png" /> +91 9242119456</p>
-                <p><img src="https://img.icons8.com/ios-filled/20/000000/email.png" />
-                    contact@NationalIslamicSchool.edu.in
-                </p>
-                <p><img src="https://img.icons8.com/ios-filled/20/000000/address.png" />National Islamic
-                    School,kalaburagi, India</p>
-            </div>
-
-
-            <div class="footer-right">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.2950410840544!2d76.86176677493377!3d17.349530283531262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc8c7226f81b7b3%3A0xce3eeb73ba184a4f!2sNational%20Islamic%20School%20(NIS)%20Kalburgi!5e0!3m2!1sen!2sin!4v1769096774967!5m2!1sen!2sin"
-                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <div class="enroll-section">
+                <button class="enroll-btn" onclick="openForm('aiuForm')">
+                    ENROLL NOW!!
+                </button>
             </div>
         </div>
 
+        <!-- ✅ ONLY ONE GLOBAL OVERLAY -->
+        <div class="overlayform" id="overlayform" onclick="closeAllForms()"></div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2026 National Islamic School | Designed & Developed by Naveen Bellad</p>
+        <!-- Jamia Form -->
+        <div class="popup-form" id="jamiaForm">
+            <span class="close-btn" onclick="closeAllForms()">×</span>
+            <h2>Apply for Jamia PU College</h2>
+
+            <form onsubmit="sendJamiaWhatsApp(event)">
+                <input type="text" id="jamiaName" placeholder="Student Name" required>
+                <input type="text" id="jamiaClass" placeholder="Applying For (10th / PUC)" required>
+                <input type="tel" id="jamiaPhone" placeholder="Mobile Number" required>
+
+                <button type="submit">Submit via WhatsApp</button>
+            </form>
         </div>
-    </footer>
+
+        <!-- AIU Form -->
+        <div class="popup-form" id="aiuForm">
+            <span class="close-btn" onclick="closeAllForms()">×</span>
+            <h2>Asian International University, Manipur</h2>
+
+            <form onsubmit="sendAIUWhatsApp(event)">
+                <input type="text" id="aiuName" placeholder="Student Name" required>
+
+                <select id="aiuCourse" required>
+                    <option value="">Select Course</option>
+                    <option>UG Programs</option>
+                    <option>PG Programs</option>
+                    <option>Engineering</option>
+                    <option>Law</option>
+                    <option>Pharmacy</option>
+                    <option>Nursing</option>
+                    <option>Paramedical Courses</option>
+                    <option>Ph.D. Programs</option>
+                </select>
+
+                <input type="tel" id="aiuPhone" placeholder="Mobile Number" required>
+
+                <button type="submit">Submit via WhatsApp</button>
+            </form>
+        </div>
+        <!-- -------------------------------------------------------------------button----------------------- -->
+        <div class="container">
+            <button class="btn" onclick="openImage()">View Course details</button>
+            <button class="btn" onclick="openPDF()">View fee details</button>
+        </div>
+
+        <!-- Image Modal -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeImage()">×</span>
+            <img class="modal-content" src="images/courses.jpeg" alt="Preview">
+        </div>
+        <!-- ---------------------------------------------------footer-------------------------------------------------- -->
+        <footer class="school-footer">
+            <div class="footer-content">
+
+                <div class="footer-left">
+                    <h3>National Islamic School</h3>
+                    <p><img src="https://img.icons8.com/ios-filled/20/000000/phone.png" /> +91 9242119456</p>
+                    <p><img src="https://img.icons8.com/ios-filled/20/000000/email.png" />
+                        contact@NationalIslamicSchool.edu.in
+                    </p>
+                    <p><img src="https://img.icons8.com/ios-filled/20/000000/address.png" />National Islamic
+                        School,kalaburagi, India</p>
+                </div>
 
 
-    <script>const hamburger = document.getElementById("hamburger");
-        const closeIcon = document.getElementById("closeIcon");
-        const navLinks = document.getElementById("navLinks");
-        const links = navLinks.querySelectorAll("a");
+                <div class="footer-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.2950410840544!2d76.86176677493377!3d17.349530283531262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc8c7226f81b7b3%3A0xce3eeb73ba184a4f!2sNational%20Islamic%20School%20(NIS)%20Kalburgi!5e0!3m2!1sen!2sin!4v1769096774967!5m2!1sen!2sin"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
 
-        hamburger.addEventListener("click", () => {
-            navLinks.classList.add("show");
-            hamburger.style.display = "none";
-            closeIcon.style.display = "block";
-        });
 
-        closeIcon.addEventListener("click", closeMenu);
+            <div class="footer-bottom">
+                <p>&copy; 2026 National Islamic School | Designed & Developed by Naveen Bellad</p>
+            </div>
+        </footer>
 
-        // Close menu when clicking any link
-        links.forEach(link => {
-            link.addEventListener("click", closeMenu);
-        });
 
-        function closeMenu() {
-            navLinks.classList.remove("show");
-            closeIcon.style.display = "none";
-            hamburger.style.display = "block";
-        }
-    </script>
-    <script>
-        function toggleCourse(element) {
-            const content = element.nextElementSibling;
-            const btn = element.querySelector('.toggle-btn');
+        <script>const hamburger = document.getElementById("hamburger");
+            const closeIcon = document.getElementById("closeIcon");
+            const navLinks = document.getElementById("navLinks");
+            const links = navLinks.querySelectorAll("a");
 
-            if (content.style.display === "block") {
-                content.style.display = "none";
-                btn.textContent = "+";
-            } else {
-                content.style.display = "block";
-                btn.textContent = "−";
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.add("show");
+                hamburger.style.display = "none";
+                closeIcon.style.display = "block";
+            });
+
+            closeIcon.addEventListener("click", closeMenu);
+
+            // Close menu when clicking any link
+            links.forEach(link => {
+                link.addEventListener("click", closeMenu);
+            });
+
+            function closeMenu() {
+                navLinks.classList.remove("show");
+                closeIcon.style.display = "none";
+                hamburger.style.display = "block";
             }
-        }
-    </script>
-    <script>
-        function openImage() {
-            document.getElementById("imageModal").style.display = "flex";
-        }
+        </script>
+        <script>
+            function toggleCourse(element) {
+                const content = element.nextElementSibling;
+                const btn = element.querySelector('.toggle-btn');
 
-        function closeImage() {
-            document.getElementById("imageModal").style.display = "none";
-        }
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                    btn.textContent = "+";
+                } else {
+                    content.style.display = "block";
+                    btn.textContent = "−";
+                }
+            }
+        </script>
+        <script>
+            function openImage() {
+                document.getElementById("imageModal").style.display = "flex";
+            }
 
-        function openPDF() {
-            window.open("images/fees.pdf", "_blank");
-        }
+            function closeImage() {
+                document.getElementById("imageModal").style.display = "none";
+            }
+
+            function openPDF() {
+                window.open("images/fees.pdf", "_blank");
+            }
 
 
-    </script>
+        </script>
+        <script>
+            const WHATSAPP_NUMBER = "919242119456";
+
+            function openForm(formId) {
+                document.getElementById("overlayform").style.display = "block";
+                document.getElementById(formId).style.display = "block";
+            }
+
+            function closeAllForms() {
+                document.getElementById("overlayform").style.display = "none";
+                document.querySelectorAll(".popup-form").forEach(f => f.style.display = "none");
+            }
+
+            /* JAMIA FORM WHATSAPP */
+            function sendJamiaWhatsApp(e) {
+                e.preventDefault();
+
+                const name = document.getElementById("jamiaName").value;
+                const course = document.getElementById("jamiaClass").value;
+                const phone = document.getElementById("jamiaPhone").value;
+
+                const msg = `Jamia PU College Enquiry:
+Name: ${name}
+Applying For: ${course}
+Mobile: ${phone}`;
+
+                window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
+            }
+
+            /* AIU FORM WHATSAPP */
+            function sendAIUWhatsApp(e) {
+                e.preventDefault();
+
+                const name = document.getElementById("aiuName").value;
+                const course = document.getElementById("aiuCourse").value;
+                const phone = document.getElementById("aiuPhone").value;
+
+                const msg = `Asian International University Enquiry:
+Name: ${name}
+Course: ${course}
+Mobile: ${phone}`;
+
+                window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
+            }
+
+
+
+        </script>
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-// .-------------------------------------------------------------banner----------------------------------
 window.addEventListener("load", function () {
 
   setTimeout(function () {
@@ -247,7 +246,8 @@ function contactInfo() {
 // -------------------------------------------------enroll forms of jamia pu and asian degree--------------------
 
 
-const WHATSAPP_NUMBER = "919242119456"; 
+
+const WHATSAPP_NUMBER = "919242119456";
 
 function openForm(formId) {
   document.getElementById("overlayform").style.display = "block";
@@ -291,7 +291,10 @@ Mobile: ${phone}`;
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
-
+window.openForm = openForm;
+window.closeAllForms = closeAllForms;
+window.sendJamiaWhatsApp = sendJamiaWhatsApp;
+window.sendAIUWhatsApp = sendAIUWhatsApp;
 
 // -------------------------------------------------------------------------------------social media animation------------------
 document.querySelectorAll('.triggerButton').forEach(button => {
