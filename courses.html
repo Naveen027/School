@@ -162,6 +162,11 @@
         }
 
         @media (max-width: 768px) {
+            .container {
+                position: relative;
+                top: 10vh;
+            }
+
             .btn {
                 width: 80%;
                 font-size: 15px;
@@ -172,6 +177,10 @@
             .enroll-btn {
                 display: block;
                 margin: 10px auto;
+            }
+
+            #viewdetails {
+                position: static;
             }
         }
     </style>
@@ -406,7 +415,7 @@
             </form>
         </div>
         <!-- -------------------------------------------------------------------button----------------------- -->
-        <div class="container">
+        <div class="container" id="viewdetails">
             <button class="btn" onclick="openImage()">View Course details</button>
             <button class="btn" onclick="openPDF()">View fee details</button>
         </div>
