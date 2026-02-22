@@ -291,6 +291,10 @@ nav {
   margin: auto;
 }
 
+.course-grid  a{
+  text-decoration: none;
+}
+
 .course-card {
   background: white;
   padding: 30px 20px;

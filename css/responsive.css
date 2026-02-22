@@ -3,8 +3,17 @@
 
   /* Navbar */
   .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* ensures full width */
+    width: 100%;
+    /* fallback safety */
     padding: 10px;
     height: auto;
+    z-index: 1000;
+    border-bottom:2px solid #1a5e3a ;
   }
 
   /* Logo Row Alignment */
@@ -43,27 +52,23 @@
     display: none;
   }
 
-  /* Nav Menu (Hidden by default) */
   .nav-links {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background: #fff;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0;
-
     padding: 0;
     margin: 0;
-
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
-
-    z-index: 999;   /* ✅ prevents overlap issues */
+    z-index: 999;
+    /* ✅ prevents overlap issues */
   }
 
   .nav-links li {
@@ -88,13 +93,13 @@
     padding-right: 0;
   }
 
-/* -------------------------------------------------------------------------about------------------------------ */
+  /* -------------------------------------------------------------------------about------------------------------ */
   .about-text h2 {
     font-size: 1.5rem;
     text-align: center;
   }
 
-  .about-text{
+  .about-text {
     margin-left: 0px;
   }
 
@@ -102,9 +107,10 @@
     margin-left: 0px;
   }
 
-  .about-text p{
+  .about-text p {
     text-align: center;
   }
+
   .courses-section {
     background-color: white;
     padding: 20px 20px;
@@ -126,24 +132,30 @@
   }
 
   .gallery-grid {
-    justify-content: space-between; /* instead of center */
-    gap: 12px; /* reduce gap for better fit */
+    justify-content: space-between;
+    /* instead of center */
+    gap: 12px;
+    /* reduce gap for better fit */
   }
 
   .gallery-item {
-    flex: 0 0 calc(50% - 6px); /* 50% minus half of gap */
+    flex: 0 0 calc(50% - 6px);
+    /* 50% minus half of gap */
     max-width: calc(50% - 6px);
-    display: none; /* ensure flex item is block-level */
+    display: none;
+    /* ensure flex item is block-level */
   }
-.gallery-item.show {
-  display: block;
-}
+
+  .gallery-item.show {
+    display: block;
+  }
 
 
   .gallery-section .section-title {
     color: #004080;
   }
- .admission-banner h2 {
-  font-size: 1.5rem;
- }
+
+  .admission-banner h2 {
+    font-size: 1.5rem;
+  }
 }
