@@ -225,6 +225,49 @@
             color: var(--clr-accent2);
         }
 
+        .info-card {
+            display: inline-flex;
+            flex-direction: column;
+            gap: 8px;
+            background: #f5f5f5;
+            border: 0.5px solid #e0e0e0;
+            border-left: 3px solid #7F77DD;
+            border-radius: 0 8px 8px 0;
+            padding: 14px 20px;
+        }
+
+        .info-includes {
+            margin: 0;
+            font-size: 15px;
+            color: #1a1a1a;
+            font-weight: 400;
+        }
+
+        .info-includes::before {
+            content: "Includes: ";
+            font-weight: 600;
+        }
+
+        .info-valid {
+            margin: 0;
+            font-size: 13px;
+            font-weight: 400;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .info-valid::before {
+            content: "";
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #1D9E75;
+            flex-shrink: 0;
+        }
+
         /* ── Responsive ── */
         @media (max-width: 900px) {
             .fees-grid {
@@ -296,18 +339,19 @@
         <div class="fee-card fee-card--green">
             <div class="fee-card__header">
                 <div class="fee-card__badge">Foundation</div>
-                <div class="fee-card__price">₹4,000 <span>/ year</span></div>
-                <div class="fee-card__price-note">LKG · UKG · I · III · IV Standards</div>
+                <div class="fee-card__price">₹5,000 <span>/ year</span></div>
+                <div class="fee-card__price-note">LKG · UKG Standards</div>
             </div>
             <div class="fee-card__body">
                 <p class="fee-card__classes-label">Classes Included</p>
                 <ul class="fee-card__classes">
                     <li>L KG</li>
                     <li>U KG</li>
-                    <li>I Std</li>
-                    <li>III Std</li>
-                    <li>IV Std</li>
                 </ul>
+                <div class="info-card">
+                    <p class="info-includes">Books and Dress</p>
+                    <h4 class="info-valid">20 May 2026</h4>
+                </div>
             </div>
         </div>
 
@@ -315,16 +359,25 @@
         <div class="fee-card fee-card--amber">
             <div class="fee-card__header">
                 <div class="fee-card__badge">Middle School</div>
-                <div class="fee-card__price">₹5,000 <span>/ year</span></div>
-                <div class="fee-card__price-note">V · VI · VII Standards</div>
+                <div class="fee-card__price">₹6,000 <span>/ year</span></div>
+                <div class="fee-card__price-note">I · II · III · IV · V · VI · VII · VIII Standards</div>
             </div>
             <div class="fee-card__body">
                 <p class="fee-card__classes-label">Classes Included</p>
                 <ul class="fee-card__classes">
+                    <li>I Std</li>
+                    <li>II Std</li>
+                    <li>III Std</li>
+                    <li>IV Std</li>
                     <li>V Std</li>
                     <li>VI Std</li>
                     <li>VII Std</li>
+                    <li>VIII Std</li>
                 </ul>
+                <div class="info-card">
+                    <p class="info-includes">Books and Dress</p>
+                    <h4 class="info-valid">20 May 2026</h4>
+                </div>
             </div>
         </div>
 
@@ -332,16 +385,19 @@
         <div class="fee-card fee-card--red">
             <div class="fee-card__header">
                 <div class="fee-card__badge">Senior School</div>
-                <div class="fee-card__price">₹6,000 <span>/ year</span></div>
-                <div class="fee-card__price-note">VIII · IX · X Standards</div>
+                <div class="fee-card__price">₹8,000 <span>/ year</span></div>
+                <div class="fee-card__price-note">IX · X Standards</div>
             </div>
             <div class="fee-card__body">
                 <p class="fee-card__classes-label">Classes Included</p>
                 <ul class="fee-card__classes">
-                    <li>VIII Std</li>
                     <li>IX Std</li>
                     <li>X Std</li>
                 </ul>
+                <div class="info-card">
+                    <p class="info-includes">Books and Dress</p>
+                    <h4 class="info-valid">20 May 2026</h4>
+                </div>
             </div>
         </div>
 
