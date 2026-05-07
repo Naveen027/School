@@ -34,12 +34,19 @@ body {
   overflow: hidden;
 }
 
-#floatingPopup img {
+/* #floatingPopup img {
   width: 100%;
   height: auto;
   max-height: 80vh;
   object-fit: contain;
   border-radius: 12px;
+} */
+
+#floatingPopup video{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
 }
 
 #floatingClose {
